@@ -22,11 +22,11 @@ const map = new mapboxgl.Map({
   maxZoom: 8,
   center: [0, 0],
   projection: 'globe'
-});
- 
+})
+map.addControl(new mapboxgl.NavigationControl())
 map.on('load', () => {
-  map.setFog({});
-});
+  map.setFog({})
+})
   </script>
 </body>
 </html>
